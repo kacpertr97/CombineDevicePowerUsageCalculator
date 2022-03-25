@@ -15,6 +15,8 @@
 		E7155E2527ECEDA300107FA1 /* Publisher+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7155E2427ECEDA300107FA1 /* Publisher+UIButton.swift */; };
 		E7155E2727ECEE5D00107FA1 /* Publisher+UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7155E2627ECEE5D00107FA1 /* Publisher+UIControl.swift */; };
 		E7155E2927ECEE9F00107FA1 /* Publisher+UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7155E2827ECEE9F00107FA1 /* Publisher+UISlider.swift */; };
+		E7688DA127EE26FE00F6E718 /* CustomUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7688DA027EE26FE00F6E718 /* CustomUiView.swift */; };
+		E7688DA327EE337400F6E718 /* DevicesVC+UIMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7688DA227EE337400F6E718 /* DevicesVC+UIMenu.swift */; };
 		E77937C127EB6525005C41E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77937C027EB6525005C41E1 /* AppDelegate.swift */; };
 		E77937C327EB6525005C41E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77937C227EB6525005C41E1 /* SceneDelegate.swift */; };
 		E77937CB27EB6525005C41E1 /* CombineDevicePowerUsageCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E77937C927EB6525005C41E1 /* CombineDevicePowerUsageCalculator.xcdatamodeld */; };
@@ -41,6 +43,8 @@
 		E7155E2427ECEDA300107FA1 /* Publisher+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+UIButton.swift"; sourceTree = "<group>"; };
 		E7155E2627ECEE5D00107FA1 /* Publisher+UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+UIControl.swift"; sourceTree = "<group>"; };
 		E7155E2827ECEE9F00107FA1 /* Publisher+UISlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+UISlider.swift"; sourceTree = "<group>"; };
+		E7688DA027EE26FE00F6E718 /* CustomUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUiView.swift; sourceTree = "<group>"; };
+		E7688DA227EE337400F6E718 /* DevicesVC+UIMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DevicesVC+UIMenu.swift"; sourceTree = "<group>"; };
 		E77937BD27EB6525005C41E1 /* CombineDevicePowerUsageCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineDevicePowerUsageCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77937C027EB6525005C41E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77937C227EB6525005C41E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 				E7155E2427ECEDA300107FA1 /* Publisher+UIButton.swift */,
 				E7155E2627ECEE5D00107FA1 /* Publisher+UIControl.swift */,
 				E7155E2827ECEE9F00107FA1 /* Publisher+UISlider.swift */,
+				E7688DA027EE26FE00F6E718 /* CustomUiView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				E7FDE7AA27EBA8060085C805 /* Cell */,
 				E7FDE79027EB90250085C805 /* DevicesViewController.swift */,
 				E7FDE79127EB90250085C805 /* DevicesViewController.xib */,
+				E7688DA227EE337400F6E718 /* DevicesVC+UIMenu.swift */,
 			);
 			path = "Devices View";
 			sourceTree = "<group>";
@@ -316,8 +322,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7155E2927ECEE9F00107FA1 /* Publisher+UISlider.swift in Sources */,
+				E7688DA127EE26FE00F6E718 /* CustomUiView.swift in Sources */,
 				E7FDE79E27EB95320085C805 /* DevicesViewModel.swift in Sources */,
 				E7FDE79227EB90250085C805 /* DevicesViewController.swift in Sources */,
+				E7688DA327EE337400F6E718 /* DevicesVC+UIMenu.swift in Sources */,
 				E7155E1E27ECE3D300107FA1 /* AddDeviceViewModel.swift in Sources */,
 				E7FDE7AD27EBA8170085C805 /* DevicesTableViewCell.swift in Sources */,
 				E7FDE79827EB91520085C805 /* MainCoordinator.swift in Sources */,
