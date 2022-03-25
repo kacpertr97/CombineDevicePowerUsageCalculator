@@ -7,25 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9F7110B5F966861BD62E440 /* Pods_CombineDevicePowerUsageCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42011984BBD4DFD44DFF4A71 /* Pods_CombineDevicePowerUsageCalculator.framework */; };
+		E7155E1A27ECDFF500107FA1 /* AddDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7155E1827ECDFF500107FA1 /* AddDeviceViewController.swift */; };
+		E7155E1B27ECDFF500107FA1 /* AddDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7155E1927ECDFF500107FA1 /* AddDeviceViewController.xib */; };
+		E7155E1E27ECE3D300107FA1 /* AddDeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7155E1D27ECE3D300107FA1 /* AddDeviceViewModel.swift */; };
+		E7155E2027ECEC5900107FA1 /* Publisher+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7155E1F27ECEC5900107FA1 /* Publisher+UITextField.swift */; };
+		E7155E2527ECEDA300107FA1 /* Publisher+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7155E2427ECEDA300107FA1 /* Publisher+UIButton.swift */; };
+		E7155E2727ECEE5D00107FA1 /* Publisher+UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7155E2627ECEE5D00107FA1 /* Publisher+UIControl.swift */; };
+		E7155E2927ECEE9F00107FA1 /* Publisher+UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7155E2827ECEE9F00107FA1 /* Publisher+UISlider.swift */; };
 		E77937C127EB6525005C41E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77937C027EB6525005C41E1 /* AppDelegate.swift */; };
 		E77937C327EB6525005C41E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77937C227EB6525005C41E1 /* SceneDelegate.swift */; };
-		E77937C527EB6525005C41E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77937C427EB6525005C41E1 /* ViewController.swift */; };
-		E77937C827EB6525005C41E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77937C627EB6525005C41E1 /* Main.storyboard */; };
 		E77937CB27EB6525005C41E1 /* CombineDevicePowerUsageCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E77937C927EB6525005C41E1 /* CombineDevicePowerUsageCalculator.xcdatamodeld */; };
 		E77937CD27EB6526005C41E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77937CC27EB6526005C41E1 /* Assets.xcassets */; };
 		E77937D027EB6526005C41E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77937CE27EB6526005C41E1 /* LaunchScreen.storyboard */; };
+		E7FDE79227EB90250085C805 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDE79027EB90250085C805 /* DevicesViewController.swift */; };
+		E7FDE79327EB90250085C805 /* DevicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7FDE79127EB90250085C805 /* DevicesViewController.xib */; };
+		E7FDE79627EB912A0085C805 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDE79527EB912A0085C805 /* Coordinator.swift */; };
+		E7FDE79827EB91520085C805 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDE79727EB91520085C805 /* MainCoordinator.swift */; };
+		E7FDE79C27EB94FE0085C805 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDE79B27EB94FE0085C805 /* DeviceModel.swift */; };
+		E7FDE79E27EB95320085C805 /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDE79D27EB95320085C805 /* DevicesViewModel.swift */; };
+		E7FDE7AD27EBA8170085C805 /* DevicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDE7AB27EBA8170085C805 /* DevicesTableViewCell.swift */; };
+		E7FDE7AE27EBA8170085C805 /* DevicesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7FDE7AC27EBA8170085C805 /* DevicesTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42011984BBD4DFD44DFF4A71 /* Pods_CombineDevicePowerUsageCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CombineDevicePowerUsageCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		974FE051F155FEB66EE4491E /* Pods-CombineDevicePowerUsageCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineDevicePowerUsageCalculator.debug.xcconfig"; path = "Target Support Files/Pods-CombineDevicePowerUsageCalculator/Pods-CombineDevicePowerUsageCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		AF7FA80B3B3E5CEE61EC6AF6 /* Pods-CombineDevicePowerUsageCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineDevicePowerUsageCalculator.release.xcconfig"; path = "Target Support Files/Pods-CombineDevicePowerUsageCalculator/Pods-CombineDevicePowerUsageCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		E7155E1827ECDFF500107FA1 /* AddDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceViewController.swift; sourceTree = "<group>"; };
+		E7155E1927ECDFF500107FA1 /* AddDeviceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddDeviceViewController.xib; sourceTree = "<group>"; };
+		E7155E1D27ECE3D300107FA1 /* AddDeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceViewModel.swift; sourceTree = "<group>"; };
+		E7155E1F27ECEC5900107FA1 /* Publisher+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+UITextField.swift"; sourceTree = "<group>"; };
+		E7155E2427ECEDA300107FA1 /* Publisher+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+UIButton.swift"; sourceTree = "<group>"; };
+		E7155E2627ECEE5D00107FA1 /* Publisher+UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+UIControl.swift"; sourceTree = "<group>"; };
+		E7155E2827ECEE9F00107FA1 /* Publisher+UISlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+UISlider.swift"; sourceTree = "<group>"; };
 		E77937BD27EB6525005C41E1 /* CombineDevicePowerUsageCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineDevicePowerUsageCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77937C027EB6525005C41E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77937C227EB6525005C41E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E77937C427EB6525005C41E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E77937C727EB6525005C41E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E77937CA27EB6525005C41E1 /* CombineDevicePowerUsageCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CombineDevicePowerUsageCalculator.xcdatamodel; sourceTree = "<group>"; };
 		E77937CC27EB6526005C41E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E77937CF27EB6526005C41E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E77937D127EB6526005C41E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7FDE79027EB90250085C805 /* DevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
+		E7FDE79127EB90250085C805 /* DevicesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevicesViewController.xib; sourceTree = "<group>"; };
+		E7FDE79527EB912A0085C805 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E7FDE79727EB91520085C805 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		E7FDE79B27EB94FE0085C805 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
+		E7FDE79D27EB95320085C805 /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
+		E7FDE7AB27EBA8170085C805 /* DevicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesTableViewCell.swift; sourceTree = "<group>"; };
+		E7FDE7AC27EBA8170085C805 /* DevicesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevicesTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +63,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F7110B5F966861BD62E440 /* Pods_CombineDevicePowerUsageCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		768B74C845700A4FC4668FDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42011984BBD4DFD44DFF4A71 /* Pods_CombineDevicePowerUsageCalculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7155E1C27ECE3BB00107FA1 /* AddDeviceView */ = {
+			isa = PBXGroup;
+			children = (
+				E7155E1827ECDFF500107FA1 /* AddDeviceViewController.swift */,
+				E7155E1927ECDFF500107FA1 /* AddDeviceViewController.xib */,
+			);
+			path = AddDeviceView;
+			sourceTree = "<group>";
+		};
+		E7155E2127ECEC5D00107FA1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E7155E1F27ECEC5900107FA1 /* Publisher+UITextField.swift */,
+				E7155E2427ECEDA300107FA1 /* Publisher+UIButton.swift */,
+				E7155E2627ECEE5D00107FA1 /* Publisher+UIControl.swift */,
+				E7155E2827ECEE9F00107FA1 /* Publisher+UISlider.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E77937B427EB6525005C41E1 = {
 			isa = PBXGroup;
 			children = (
 				E77937BF27EB6525005C41E1 /* CombineDevicePowerUsageCalculator */,
 				E77937BE27EB6525005C41E1 /* Products */,
+				F76EFFF0C7E5804D0466B2B6 /* Pods */,
+				768B74C845700A4FC4668FDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +119,82 @@
 		E77937BF27EB6525005C41E1 /* CombineDevicePowerUsageCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				E7FDE79A27EB94EF0085C805 /* Model */,
+				E7FDE79927EB94DE0085C805 /* View Models */,
+				E7FDE79427EB906C0085C805 /* Coordinator */,
+				E7FDE78F27EB90090085C805 /* Views */,
 				E77937C027EB6525005C41E1 /* AppDelegate.swift */,
 				E77937C227EB6525005C41E1 /* SceneDelegate.swift */,
-				E77937C427EB6525005C41E1 /* ViewController.swift */,
-				E77937C627EB6525005C41E1 /* Main.storyboard */,
 				E77937CC27EB6526005C41E1 /* Assets.xcassets */,
 				E77937CE27EB6526005C41E1 /* LaunchScreen.storyboard */,
 				E77937D127EB6526005C41E1 /* Info.plist */,
 				E77937C927EB6525005C41E1 /* CombineDevicePowerUsageCalculator.xcdatamodeld */,
+				E7155E2127ECEC5D00107FA1 /* Helpers */,
 			);
 			path = CombineDevicePowerUsageCalculator;
+			sourceTree = "<group>";
+		};
+		E7FDE78F27EB90090085C805 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7155E1C27ECE3BB00107FA1 /* AddDeviceView */,
+				E7FDE7A327EB9D850085C805 /* Devices View */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E7FDE79427EB906C0085C805 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E7FDE79527EB912A0085C805 /* Coordinator.swift */,
+				E7FDE79727EB91520085C805 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E7FDE79927EB94DE0085C805 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				E7FDE79D27EB95320085C805 /* DevicesViewModel.swift */,
+				E7155E1D27ECE3D300107FA1 /* AddDeviceViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		E7FDE79A27EB94EF0085C805 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7FDE79B27EB94FE0085C805 /* DeviceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E7FDE7A327EB9D850085C805 /* Devices View */ = {
+			isa = PBXGroup;
+			children = (
+				E7FDE7AA27EBA8060085C805 /* Cell */,
+				E7FDE79027EB90250085C805 /* DevicesViewController.swift */,
+				E7FDE79127EB90250085C805 /* DevicesViewController.xib */,
+			);
+			path = "Devices View";
+			sourceTree = "<group>";
+		};
+		E7FDE7AA27EBA8060085C805 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E7FDE7AB27EBA8170085C805 /* DevicesTableViewCell.swift */,
+				E7FDE7AC27EBA8170085C805 /* DevicesTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F76EFFF0C7E5804D0466B2B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				974FE051F155FEB66EE4491E /* Pods-CombineDevicePowerUsageCalculator.debug.xcconfig */,
+				AF7FA80B3B3E5CEE61EC6AF6 /* Pods-CombineDevicePowerUsageCalculator.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E77937D427EB6526005C41E1 /* Build configuration list for PBXNativeTarget "CombineDevicePowerUsageCalculator" */;
 			buildPhases = (
+				AC4B885CCBC1B0D601783C5C /* [CP] Check Pods Manifest.lock */,
 				E77937B927EB6525005C41E1 /* Sources */,
 				E77937BA27EB6525005C41E1 /* Frameworks */,
 				E77937BB27EB6525005C41E1 /* Resources */,
+				E7FDE78E27EB65E60085C805 /* swiftLint */,
 			);
 			buildRules = (
 			);
@@ -128,22 +257,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7155E1B27ECDFF500107FA1 /* AddDeviceViewController.xib in Resources */,
 				E77937D027EB6526005C41E1 /* LaunchScreen.storyboard in Resources */,
 				E77937CD27EB6526005C41E1 /* Assets.xcassets in Resources */,
-				E77937C827EB6525005C41E1 /* Main.storyboard in Resources */,
+				E7FDE79327EB90250085C805 /* DevicesViewController.xib in Resources */,
+				E7FDE7AE27EBA8170085C805 /* DevicesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC4B885CCBC1B0D601783C5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CombineDevicePowerUsageCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7FDE78E27EB65E60085C805 /* swiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E77937B927EB6525005C41E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E77937C527EB6525005C41E1 /* ViewController.swift in Sources */,
+				E7155E2927ECEE9F00107FA1 /* Publisher+UISlider.swift in Sources */,
+				E7FDE79E27EB95320085C805 /* DevicesViewModel.swift in Sources */,
+				E7FDE79227EB90250085C805 /* DevicesViewController.swift in Sources */,
+				E7155E1E27ECE3D300107FA1 /* AddDeviceViewModel.swift in Sources */,
+				E7FDE7AD27EBA8170085C805 /* DevicesTableViewCell.swift in Sources */,
+				E7FDE79827EB91520085C805 /* MainCoordinator.swift in Sources */,
+				E7155E1A27ECDFF500107FA1 /* AddDeviceViewController.swift in Sources */,
+				E7155E2527ECEDA300107FA1 /* Publisher+UIButton.swift in Sources */,
+				E7FDE79C27EB94FE0085C805 /* DeviceModel.swift in Sources */,
 				E77937C127EB6525005C41E1 /* AppDelegate.swift in Sources */,
+				E7FDE79627EB912A0085C805 /* Coordinator.swift in Sources */,
+				E7155E2727ECEE5D00107FA1 /* Publisher+UIControl.swift in Sources */,
 				E77937C327EB6525005C41E1 /* SceneDelegate.swift in Sources */,
+				E7155E2027ECEC5900107FA1 /* Publisher+UITextField.swift in Sources */,
 				E77937CB27EB6525005C41E1 /* CombineDevicePowerUsageCalculator.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +336,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E77937C627EB6525005C41E1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E77937C727EB6525005C41E1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E77937CE27EB6526005C41E1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,6 +463,7 @@
 		};
 		E77937D527EB6526005C41E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 974FE051F155FEB66EE4491E /* Pods-CombineDevicePowerUsageCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,7 +474,6 @@
 				INFOPLIST_FILE = CombineDevicePowerUsageCalculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -314,6 +491,7 @@
 		};
 		E77937D627EB6526005C41E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF7FA80B3B3E5CEE61EC6AF6 /* Pods-CombineDevicePowerUsageCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -324,7 +502,6 @@
 				INFOPLIST_FILE = CombineDevicePowerUsageCalculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

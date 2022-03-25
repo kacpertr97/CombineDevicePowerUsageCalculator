@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddDeviceViewController" customModule="CombineDevicePowerUsageCalculator" customModuleProvider="target">
+            <connections>
+                <outlet property="addDeviceButton" destination="ow2-VQ-1k8" id="xDs-4h-JHs"/>
+                <outlet property="deviceNameTextField" destination="4Xu-6v-Rot" id="1Qb-0z-crl"/>
+                <outlet property="powerUsageTextField" destination="daQ-K7-zJl" id="ZrJ-bn-pk7"/>
+                <outlet property="timeLabel" destination="YXY-Pu-dF8" id="y78-xR-5PY"/>
+                <outlet property="timeSlider" destination="kjE-PM-iq7" id="nSd-qE-8me"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XEO-T5-eSz">
+                    <rect key="frame" x="15" y="94" width="320" height="34"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHl-4y-MFl">
+                            <rect key="frame" x="0.0" y="0.0" width="103" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Xu-6v-Rot">
+                            <rect key="frame" x="113" y="0.0" width="207" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pnu-wb-L1g">
+                    <rect key="frame" x="15" y="143" width="319.5" height="34"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power usage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQG-hd-8tX">
+                            <rect key="frame" x="0.0" y="0.0" width="102.5" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="daQ-K7-zJl">
+                            <rect key="frame" x="112.5" y="0.0" width="207" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time of Usage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTD-I1-6Zv">
+                    <rect key="frame" x="149.5" y="227" width="115" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="enc-bP-bau">
+                    <rect key="frame" x="50" y="267.5" width="314" height="30"/>
+                    <subviews>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="kjE-PM-iq7">
+                            <rect key="frame" x="-2" y="0.0" width="252.5" height="31"/>
+                        </slider>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXY-Pu-dF8">
+                            <rect key="frame" x="268.5" y="0.0" width="45.5" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ow2-VQ-1k8">
+                    <rect key="frame" x="158" y="437.5" width="98" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Add Device"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kjE-PM-iq7" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.6" id="3YU-qH-Chr"/>
+                <constraint firstItem="jTD-I1-6Zv" firstAttribute="top" secondItem="pnu-wb-L1g" secondAttribute="bottom" constant="50" id="CGa-H3-KvW"/>
+                <constraint firstItem="XEO-T5-eSz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="Dn6-cN-hcp"/>
+                <constraint firstItem="ow2-VQ-1k8" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Jhh-Il-PoV"/>
+                <constraint firstItem="daQ-K7-zJl" firstAttribute="width" secondItem="4Xu-6v-Rot" secondAttribute="width" id="Kyh-VO-86k"/>
+                <constraint firstItem="jTD-I1-6Zv" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="LUM-37-whn"/>
+                <constraint firstItem="XEO-T5-eSz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="NML-as-hBO"/>
+                <constraint firstItem="enc-bP-bau" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="PgP-OO-ErU"/>
+                <constraint firstItem="pnu-wb-L1g" firstAttribute="top" secondItem="XEO-T5-eSz" secondAttribute="bottom" constant="15" id="RXL-SN-zNY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pnu-wb-L1g" secondAttribute="trailing" constant="15" id="Rwr-AQ-kS8"/>
+                <constraint firstItem="enc-bP-bau" firstAttribute="top" secondItem="jTD-I1-6Zv" secondAttribute="bottom" constant="20" id="a7v-ar-Rqp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="enc-bP-bau" secondAttribute="trailing" constant="50" id="cg6-OU-158"/>
+                <constraint firstItem="ow2-VQ-1k8" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="dWX-Xg-7tT"/>
+                <constraint firstItem="pnu-wb-L1g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="iUR-TC-79o"/>
+                <constraint firstItem="4Xu-6v-Rot" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.5" id="s8B-DR-tcq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XEO-T5-eSz" secondAttribute="trailing" constant="15" id="tP9-2t-cvZ"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

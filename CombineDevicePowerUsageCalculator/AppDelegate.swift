@@ -3,7 +3,8 @@
 //  CombineDevicePowerUsageCalculator
 //
 //  Created by Kacper Trębacz on 23/03/2022.
-//
+//  swiftlint:disable all
+
 
 import UIKit
 import CoreData
