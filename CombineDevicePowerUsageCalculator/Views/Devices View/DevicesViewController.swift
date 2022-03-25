@@ -16,9 +16,11 @@ class DevicesViewController: UIViewController, Coordinating {
     var coordinator: Coordinator?
     var subscriptions = Set<AnyCancellable>()
 
-    let devicesVM = DevicesViewModel()
-
+    @IBOutlet weak var priceForKwhLabel: UILabel!
+    @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var devicesTableView: UITableView!
+
+    let devicesVM = DevicesViewModel()
     var dataSource: UITableViewDiffableDataSource<Section, DeviceModel>?
 
     override func viewDidLoad() {
@@ -36,10 +38,23 @@ class DevicesViewController: UIViewController, Coordinating {
 
     func performBindings() {
         devicesVM.$devices
-            .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
+            .debounce(for: .seconds(0.3), scheduler: DispatchQueue.main)
             .sink { [weak self] _ in
+                print("update")
                 self?.updateDataSource()
             }.store(in: &subscriptions)
+
+        devicesVM.priceForKwh.sink { [weak self] value in
+            self?.priceForKwhLabel.text = String(value)
+        }.store(in: &subscriptions)
+
+        devicesVM.$totalPrice.sink { [weak self] value in
+            self?.totalLabel.text = String(value)
+        }.store(in: &subscriptions)
+
+        devicesVM.refreshTableView.sink { _ in
+            self.updateDataSource()
+        }.store(in: &subscriptions)
     }
 
     func setupNavBar() {
@@ -47,6 +62,10 @@ class DevicesViewController: UIViewController, Coordinating {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
                                                             target: self,
                                                             action: #selector(addBarButtonClicked))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: nil,
+                                                           image: UIImage(systemName: "gearshape.fill"),
+                                                           primaryAction: nil,
+                                                           menu: createUIMenu())
     }
 
     @objc func addBarButtonClicked() {

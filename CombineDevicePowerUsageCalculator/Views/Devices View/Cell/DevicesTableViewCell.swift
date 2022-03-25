@@ -29,5 +29,6 @@ class DevicesTableViewCell: UITableViewCell {
         nameLabel.text = device.name
         powerLabel.text = "Power: \(device.power)W"
         timeOfUsageLabel.text = "Time of usage: \(device.timeOfUsage)h"
+        priceLabel.text = String(device.price)
     }
 }
