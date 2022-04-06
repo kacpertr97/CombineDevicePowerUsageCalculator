@@ -38,5 +38,6 @@ class MainCoordinator: Coordinator {
         let viewController = navigationController?.viewControllers.first as? DevicesViewController
         navigationController?.popViewController(animated: true)
         viewController?.devicesVM.deviceToAdd.send(device)
+        CoreDataServices.saveDeviceToCoreData(device: device)
     }
 }

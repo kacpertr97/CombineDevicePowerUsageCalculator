@@ -22,6 +22,8 @@
 		E77937CB27EB6525005C41E1 /* CombineDevicePowerUsageCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E77937C927EB6525005C41E1 /* CombineDevicePowerUsageCalculator.xcdatamodeld */; };
 		E77937CD27EB6526005C41E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77937CC27EB6526005C41E1 /* Assets.xcassets */; };
 		E77937D027EB6526005C41E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77937CE27EB6526005C41E1 /* LaunchScreen.storyboard */; };
+		E7F1F27D27F089830070AE15 /* CoreDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F27C27F089830070AE15 /* CoreDataServices.swift */; };
+		E7F6140D27FD79F40030E6F0 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F6140C27FD79F40030E6F0 /* SettingsModel.swift */; };
 		E7FDE79227EB90250085C805 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDE79027EB90250085C805 /* DevicesViewController.swift */; };
 		E7FDE79327EB90250085C805 /* DevicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7FDE79127EB90250085C805 /* DevicesViewController.xib */; };
 		E7FDE79627EB912A0085C805 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDE79527EB912A0085C805 /* Coordinator.swift */; };
@@ -52,6 +54,8 @@
 		E77937CC27EB6526005C41E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E77937CF27EB6526005C41E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E77937D127EB6526005C41E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7F1F27C27F089830070AE15 /* CoreDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServices.swift; sourceTree = "<group>"; };
+		E7F6140C27FD79F40030E6F0 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		E7FDE79027EB90250085C805 /* DevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
 		E7FDE79127EB90250085C805 /* DevicesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevicesViewController.xib; sourceTree = "<group>"; };
 		E7FDE79527EB912A0085C805 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -98,7 +102,6 @@
 				E7155E2427ECEDA300107FA1 /* Publisher+UIButton.swift */,
 				E7155E2627ECEE5D00107FA1 /* Publisher+UIControl.swift */,
 				E7155E2827ECEE9F00107FA1 /* Publisher+UISlider.swift */,
-				E7688DA027EE26FE00F6E718 /* CustomUiView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -124,6 +127,8 @@
 		E77937BF27EB6525005C41E1 /* CombineDevicePowerUsageCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				E7F1F27B27F0896E0070AE15 /* Common */,
+				E7155E2127ECEC5D00107FA1 /* Helpers */,
 				E7FDE79A27EB94EF0085C805 /* Model */,
 				E7FDE79927EB94DE0085C805 /* View Models */,
 				E7FDE79427EB906C0085C805 /* Coordinator */,
@@ -134,9 +139,17 @@
 				E77937CE27EB6526005C41E1 /* LaunchScreen.storyboard */,
 				E77937D127EB6526005C41E1 /* Info.plist */,
 				E77937C927EB6525005C41E1 /* CombineDevicePowerUsageCalculator.xcdatamodeld */,
-				E7155E2127ECEC5D00107FA1 /* Helpers */,
 			);
 			path = CombineDevicePowerUsageCalculator;
+			sourceTree = "<group>";
+		};
+		E7F1F27B27F0896E0070AE15 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E7688DA027EE26FE00F6E718 /* CustomUiView.swift */,
+				E7F1F27C27F089830070AE15 /* CoreDataServices.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		E7FDE78F27EB90090085C805 /* Views */ = {
@@ -170,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				E7FDE79B27EB94FE0085C805 /* DeviceModel.swift */,
+				E7F6140C27FD79F40030E6F0 /* SettingsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -322,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7155E2927ECEE9F00107FA1 /* Publisher+UISlider.swift in Sources */,
+				E7F6140D27FD79F40030E6F0 /* SettingsModel.swift in Sources */,
 				E7688DA127EE26FE00F6E718 /* CustomUiView.swift in Sources */,
 				E7FDE79E27EB95320085C805 /* DevicesViewModel.swift in Sources */,
 				E7FDE79227EB90250085C805 /* DevicesViewController.swift in Sources */,
@@ -333,6 +348,7 @@
 				E7155E2527ECEDA300107FA1 /* Publisher+UIButton.swift in Sources */,
 				E7FDE79C27EB94FE0085C805 /* DeviceModel.swift in Sources */,
 				E77937C127EB6525005C41E1 /* AppDelegate.swift in Sources */,
+				E7F1F27D27F089830070AE15 /* CoreDataServices.swift in Sources */,
 				E7FDE79627EB912A0085C805 /* Coordinator.swift in Sources */,
 				E7155E2727ECEE5D00107FA1 /* Publisher+UIControl.swift in Sources */,
 				E77937C327EB6525005C41E1 /* SceneDelegate.swift in Sources */,
